@@ -4,6 +4,6 @@
 
 @for(item of tareas; track item.id){
     <ul>
-        <li>{{item.id}}         {{item.name}}</li>
+        <li>{{item.id}} - {{item.name}}<button (click)="borrar(item.id)">Quitar</button></li>
     </ul>
 }

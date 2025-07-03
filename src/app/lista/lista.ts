@@ -15,19 +15,20 @@ interface task {
 })
 
 export class Lista {
-  tarea:string='';
+  tarea: string = '';
   tareas: task[] = [];
 
-agregar(){
-  
-  this.tareas.push({id:crypto.randomUUID(),name:this.tarea});
-  this.tarea='';
+  agregar() {
+
+    this.tareas.push({ id: crypto.randomUUID(), name: this.tarea });
+    this.tarea = '';
+  }
+
+  borrar(id: string) {
+    this.tareas = this.tareas.filter(tarea => tarea.id !== id);
+  }
+
 }
 
 
 
-}
-
-
-
- 
