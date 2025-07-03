@@ -1,0 +1,9 @@
+ <input type="text" [(ngModel)]="tarea" >
+
+ <button (click)="agregar()">Agregar</button>
+
+@for(item of tareas; track item.id){
+    <ul>
+        <li>{{item.id}}         {{item.name}}</li>
+    </ul>
+}
