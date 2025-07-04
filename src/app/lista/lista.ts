@@ -26,7 +26,9 @@ export class Lista {
     //nuevo='';
   }
 
-
+borrar(id: string) {
+    this.tareas = this.tareas.filter(tarea => tarea.id !== id);
+  }
 
 }
 

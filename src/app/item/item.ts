@@ -13,9 +13,9 @@ export class Item {
 
   @Output() textoAgregado = new EventEmitter<string>();
   emitirTexto() {
-    const limpio = this.tarea.trim();
-    if (limpio) {
-      this.textoAgregado.emit(limpio);
+    const dato = this.tarea.trim();
+    if (dato) {
+      this.textoAgregado.emit(dato);
       this.tarea = '';
     }
   }
