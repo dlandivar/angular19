@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+
 interface task {
   name: string;
   id: string;
@@ -15,14 +16,14 @@ interface task {
 })
 
 export class Lista {
-  tarea:string='';
+  //tarea:string='';
   tareas: task[] = [];
 
-agregar(){
-  
-  this.tareas.push({id:crypto.randomUUID(),name:this.tarea});
-  this.tarea='';
-}
+  agregar(nuevo: string) {
+
+    this.tareas.push({ id: crypto.randomUUID(), name: nuevo });
+    //nuevo='';
+  }
 
 
 
@@ -30,4 +31,3 @@ agregar(){
 
 
 
- 
