@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Item } from '../item/item';
 
 
 interface task {
@@ -10,7 +11,7 @@ interface task {
 
 @Component({
   selector: 'app-lista',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule,Item],
   templateUrl: './lista.html',
   styleUrl: './lista.css'
 })
