@@ -1,0 +1,12 @@
+.espaciado {
+  margin-left: 16px; /* Puedes usar px, rem, %, etc. */
+}
+.id-estilo {
+  color: crimson;
+  font-weight: bold;
+}
+
+.nombre-estilo {
+  color: darkgreen;
+  font-weight: bold;
+}

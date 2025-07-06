@@ -1,7 +1,11 @@
- <app-item (textoAgregado)="agregar($event)"></app-item>
+<app-item (textoAgregado)="agregar($event)"></app-item>
 
 @for(item of tareas; track item.id){
-    <ul>
-        <li>{{item.id}}    -     {{item.name}}<button (click)="borrar(item.id)">Quitar</button></li>
-    </ul>
+<ul>
+    <li>
+        <span class="id-estilo">{{ item.id }}</span>
+        <span class="espaciado nombre-estilo">{{ item.name }}</span>
+        <button (click)="borrar(item.id)" class="espaciado">Quitar</button>
+    </li>
+</ul>
 }

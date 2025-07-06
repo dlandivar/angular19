@@ -1,0 +1,15 @@
+.boton-agregar {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.boton-agregar:hover {
+  background-color: blue;
+}
+.espaciado {
+  margin-left: 16px; /* Puedes usar px, rem, %, etc. */
+}
